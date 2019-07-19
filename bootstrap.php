@@ -36,6 +36,8 @@ along with this program. If not, see {License URI}.
 */
 namespace WynotWebdev\CollapsibleContent;
 
-function plugin_launch() {
-
+if ( ! defined( 'ABSPATH' ) ) {
+	die( "Oh, silly, there's nothing to see here." );
 }
+
+include( __DIR__ . '/src/shortcode/shortcodes.php' );
