@@ -20,7 +20,7 @@ module.exports = function ( moduleRoot ) {
 
 	var moduleSettings = {
 		package: 'collapsible-content',
-		domain: 'collapsible-content.dev',
+		domain: 'collapsible-content.local',
 		// If this is for a theme, set to `true`; else, set to `false`.
 		isTheme: false,
 		i18n: {
@@ -104,7 +104,7 @@ module.exports = function ( moduleRoot ) {
 	};
 
 	var distFilenames = {
-		concatScripts: 'jquery.project.js'
+		concatScripts: 'jquery.plugin.js'
 	};
 
 	/************************************

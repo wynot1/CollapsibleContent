@@ -9,9 +9,6 @@
  * @license MIT
  */
 namespace WynotWebdev\CollapsibleContent\Shortcode;
-//[qa question="What question would you like to ask me?" show_icon="" hide_icon-""]this is the answer[/qa]
-
-//[teaser visible_message="What question would you like to ask me?" show_icon="" hide_icon=""]this is the answer[/teaser]
 
 add_shortcode( 'qa', __NAMESPACE__ . '\process_the_shortcode' );
 add_shortcode( 'teaser', __NAMESPACE__ . '\process_the_shortcode' );
@@ -29,7 +26,7 @@ add_shortcode( 'teaser', __NAMESPACE__ . '\process_the_shortcode' );
 function process_the_shortcode( $user_defined_attributes, $hidden_content, $shortcode_name ) {
 	$config = get_shortcode_configuration( $shortcode_name );
 	$attributes = shortcode_atts(
-		$config['defaults'],
+	$config['defaults'],
 		$user_defined_attributes,
 		$shortcode_name
 	);
